@@ -129,7 +129,7 @@ export class RadicasterStack extends cdk.Stack {
       code: Code.fromInline(code),
       handler: "index.handler",
       // NOTE: Node 14.x does not support inline code
-      runtime: Runtime.NODEJS_12_X,
+      runtime: Runtime.NODEJS_16_X,
       functionName: `radicaster-basic-auth${params.suffix}`,
       memorySize: 128,
     });
